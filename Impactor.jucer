@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="JuouC8" name="Impactor" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginManufacturer="LIM" pluginManufacturerCode="LIM!">
+  <MAINGROUP id="GKFUvt" name="Impactor">
+    <GROUP id="{7936D611-B37F-CD02-09F5-BB420DB01685}" name="Source">
+      <GROUP id="{FE26C903-0723-97EA-FCC6-D28C392BA69F}" name="GUI">
+        <FILE id="ANhNWf" name="AudioVisualizer.cpp" compile="1" resource="0"
+              file="Source/AudioVisualizer.cpp"/>
+        <FILE id="I73WxB" name="AudioVisualizer.h" compile="0" resource="0"
+              file="Source/AudioVisualizer.h"/>
+        <FILE id="rWzUDV" name="ImpactorTheme.cpp" compile="1" resource="0"
+              file="Source/ImpactorTheme.cpp"/>
+        <FILE id="WTMhCq" name="ImpactorTheme.h" compile="0" resource="0" file="Source/ImpactorTheme.h"/>
+        <FILE id="eX32XQ" name="Meter.cpp" compile="1" resource="0" file="Source/Meter.cpp"/>
+        <FILE id="mgeRPh" name="Meter.h" compile="0" resource="0" file="Source/Meter.h"/>
+        <FILE id="PEz5YL" name="MeterLabel.cpp" compile="1" resource="0" file="Source/MeterLabel.cpp"/>
+        <FILE id="HZn16O" name="MeterLabel.h" compile="0" resource="0" file="Source/MeterLabel.h"/>
+        <FILE id="OKJZLo" name="PluginEditor.cpp" compile="1" resource="0"
+              file="Source/PluginEditor.cpp"/>
+        <FILE id="sM6Fpw" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      </GROUP>
+      <GROUP id="{94F82A93-BCA8-4C31-47F1-F69E27B1D0E2}" name="DSP">
+        <FILE id="iBmx0M" name="Detector.cpp" compile="1" resource="0" file="Source/Detector.cpp"/>
+        <FILE id="ixtPOR" name="Detector.h" compile="0" resource="0" file="Source/Detector.h"/>
+        <FILE id="LwwPD8" name="DryWet.cpp" compile="1" resource="0" file="Source/DryWet.cpp"/>
+        <FILE id="XR4eS7" name="DryWet.h" compile="0" resource="0" file="Source/DryWet.h"/>
+        <FILE id="tfRuM5" name="GainComputer.cpp" compile="1" resource="0"
+              file="Source/GainComputer.cpp"/>
+        <FILE id="R7LIGt" name="GainComputer.h" compile="0" resource="0" file="Source/GainComputer.h"/>
+        <FILE id="FixAkg" name="GainControl.cpp" compile="1" resource="0" file="Source/GainControl.cpp"/>
+        <FILE id="QkN3dx" name="GainControl.h" compile="0" resource="0" file="Source/GainControl.h"/>
+        <FILE id="ZxWUm1" name="GainStage.cpp" compile="1" resource="0" file="Source/GainStage.cpp"/>
+        <FILE id="icHqeA" name="GainStage.h" compile="0" resource="0" file="Source/GainStage.h"/>
+      </GROUP>
+      <FILE id="I4Aq2r" name="PluginParameters.h" compile="0" resource="0"
+            file="Source/PluginParameters.h"/>
+      <FILE id="zuE2TJ" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="MUWAdp" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Impactor"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Impactor"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
