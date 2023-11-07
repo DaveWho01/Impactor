@@ -1,4 +1,4 @@
 # Impactor
 An audio compressor plugin made with JUCE
 
-![ScreenShot](ImpactorScreen)
+![ScreenShot](ImpactorScreen.png)
